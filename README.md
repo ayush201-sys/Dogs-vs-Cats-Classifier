@@ -89,8 +89,8 @@ Dense(1, Sigmoid)
 
 ## Known Limitations
 
-The model shows clear overfitting after ~2 epochs, where validation loss increases while training loss continues to decrease, indicating poor generalization. — validation loss rises steadily while training loss continues to drop. Planned improvements:
-
+The model shows clear overfitting after ~2 epochs, where validation loss increases while training loss continues to decrease, indicating poor generalization. 
+## Planned improvements:
 - Add **Dropout layers** after dense layers to regularize
 - Apply **Data Augmentation** (flips, rotations, zoom) to increase effective training set size
 - Try **Transfer Learning** with MobileNetV2 or EfficientNet for significantly better validation accuracy
