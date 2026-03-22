@@ -2,6 +2,13 @@
 
 A binary image classifier built with a Convolutional Neural Network (CNN) to distinguish between dogs and cats. Trained on the Kaggle Dogs vs Cats dataset (25,000 images).
 
+## 🚀 Project Highlights
+
+- Built a CNN from scratch for binary image classification  
+- Achieved ~99% training accuracy and ~81% validation accuracy  
+- Identified and analyzed overfitting behavior  
+- Implemented end-to-end training pipeline using TensorFlow/Keras
+  
 ## Results
 
 | Metric | Value |
@@ -24,6 +31,7 @@ A binary image classifier built with a Convolutional Neural Network (CNN) to dis
 ## Dataset
 
 [Kaggle Dogs vs Cats](https://www.kaggle.com/datasets/salader/dogs-vs-cats) — 25,000 labeled images split into 20,000 training images and 5,000 test images.
+Images were preprocessed and resized to 256×256 before training.
 
 ## Model Architecture
 
@@ -81,7 +89,7 @@ Dense(1, Sigmoid)
 
 ## Known Limitations
 
-The model overfits after ~2 epochs — validation loss rises steadily while training loss continues to drop. Planned improvements:
+The model shows clear overfitting after ~2 epochs, where validation loss increases while training loss continues to decrease, indicating poor generalization. — validation loss rises steadily while training loss continues to drop. Planned improvements:
 
 - Add **Dropout layers** after dense layers to regularize
 - Apply **Data Augmentation** (flips, rotations, zoom) to increase effective training set size
